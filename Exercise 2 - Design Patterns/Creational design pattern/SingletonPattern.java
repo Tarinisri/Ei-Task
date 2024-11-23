@@ -30,7 +30,7 @@ class Logger {
     }
 }
 
-public class Singleton {
+public class SingletonPattern {
     public static void main(String[] args) {
         // Retrieve the single instance of Logger
         Logger logger = Logger.getInstance();

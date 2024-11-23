@@ -38,7 +38,7 @@ class TextEditor {
 }
 
 // Client
-public class Memento {
+public class MementoPattern {
     public static void main(String[] args) {
         TextEditor editor = new TextEditor();
         editor.write("Version 1");

@@ -33,7 +33,7 @@ class Level2Support extends SupportHandler {
 }
 
 // Client
-public class ChainOfResponsibility {
+public class ChainOfResponsibilityPattern {
     public static void main(String[] args) {
         SupportHandler level1 = new Level1Support();
         SupportHandler level2 = new Level2Support();

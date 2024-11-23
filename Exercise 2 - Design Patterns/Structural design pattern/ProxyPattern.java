@@ -26,7 +26,7 @@ class ApiProxy implements ApiInterface {
 }
 
 // Client
-public class Proxy {
+public class ProxyPattern {
     public static void main(String[] args) {
         ApiProxy proxy = new ApiProxy();
         System.out.println(proxy.fetchData("/data"));

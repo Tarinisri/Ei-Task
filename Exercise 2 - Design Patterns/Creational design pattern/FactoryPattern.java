@@ -37,7 +37,7 @@ class ShapeFactory {
 }
 
 // Client
-public class Factory {
+public class FactoryPattern {
     public static void main(String[] args) {
         Shape shape = ShapeFactory.createShape("Circle");
         shape.draw();

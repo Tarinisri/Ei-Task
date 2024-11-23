@@ -35,7 +35,7 @@ class VideoConverterFacade {
 }
 
 // Client
-public class Facade {
+public class FacadePattern {
     public static void main(String[] args) {
         VideoConverterFacade converter = new VideoConverterFacade();
         converter.convert("MP4", "AAC", "output.mp4");

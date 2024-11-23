@@ -49,7 +49,7 @@ class CarBuilder {
 }
 
 // Client
-public class Builder {
+public class BuilderPattern {
     public static void main(String[] args) {
         Car car = new CarBuilder()
             .setEngine("V8")

@@ -1,9 +1,9 @@
-#Task Documentation
+# Task Documentation
 This repository contains two main exercises:
 
-##Exercise 1: Console-Based Simple E-commerce Cart System Programming Excercise
+## Exercise 1: Console-Based Simple E-commerce Cart System Programming Excercise
 
-###Overview
+### Overview
 The E-Commerce Cart System is a console-based application showcasing object-oriented principles and design patterns like Prototype, Strategy, and Singleton. It allows users to manage a shopping cart, apply discounts, and calculate the total bill interactively.
 
 **Key Features**
@@ -25,7 +25,7 @@ Singleton: Extendable for centralized logging or configuration.
 View products, manage cart contents, apply discounts, and compute totals seamlessly.
 
 
-##Exercise 2: Design Pattern Excercise
+## Exercise 2: Design Pattern Excercise
 
 ### Overview
 This exercise demonstrates the application of various design patterns through practical examples. The included patterns are:

@@ -31,7 +31,7 @@ class PayPalAdapter implements PaymentProcessor {
 }
 
 // Client
-public class Adapter {
+public class AdapterPattern {
     public static void main(String[] args) {
         PaymentProcessor paymentProcessor = new PayPalAdapter(new PayPal());
         paymentProcessor.processPayment(150.0);

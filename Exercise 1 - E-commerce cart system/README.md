@@ -1,6 +1,7 @@
-#E-Commerce Cart System
+# E-Commerce Cart System
 
-**Problem Statement**
+### Problem Statement:
+
 Create a console-based E-Commerce Cart System where users can:
 
 - Add products to their shopping cart.
@@ -9,10 +10,12 @@ Create a console-based E-Commerce Cart System where users can:
 - Calculate the total bill.
 The system should implement design patterns to demonstrate scalability, modularity, and reusability in real-world e-commerce scenarios.
 
-**Project Overview**
+### Project Overview:
+
 The E-Commerce Cart System is an interactive console-based application that emulates an online shopping cart. It allows users to manage their purchases and apply discounts dynamically. The application leverages object-oriented principles and incorporates design patterns such as Prototype, Strategy, and Singleton to create a robust, extensible solution.
 
-**Project Structure**
+### Project Structure:
+
 `Main.java`
 - The entry point of the application.
 - Provides a menu-driven interface for users to interact with the cart system.
@@ -36,57 +39,69 @@ Offers options to view products, manage the cart, apply discounts, and view the 
 - Handles the total bill computation.
 
 `DiscountStrategy.java`
-- Interface for defining discount behaviors.
-- Includes implementations:
+- Interface for defining discount behaviors:
 - NoDiscount: No discount applied.
-PercentageDiscount: Applies a percentage discount.
-BuyOneGetOneFree: Implements a "Buy One Get One Free" offer.
-Logger.java (Optional for Extension)
+- PercentageDiscount: Applies a percentage discount.
+- BuyOneGetOneFree: Implements a "Buy One Get One Free" offer.
 
-Can log significant user actions, such as product addition, removal, and checkout events.
-##How to Use the E-Commerce Cart System
-- Run the Application
+`Logger.java (Optional for Extension)`
+- Can log significant user actions, such as product addition, removal, and checkout events.
+
+## How to Use the E-Commerce Cart System
+
+- **Run the Application**
+
 Execute the `Main.java` file to start the console-based interface.
 
-- View Products
+- **View Products**
+
 View a list of available products with their prices and availability.
 
-- Add Products to Cart
+- **Add Products to Cart**
+
 Enter the product name and quantity to add it to your cart.
 
-- View Cart
+- **View Cart**
+
 Display all items in your cart along with their total prices.
 
-- Update or Remove Items
+- **Update or Remove Items**
+
 Modify quantities or remove items from the cart.
 
-- Apply Discounts
+- **Apply Discounts**
+
 Choose from available discount strategies:
 
 1. No Discount.
 2. Percentage-based Discount.
 3. Buy One Get One Free.
 
-- Calculate Total Bill
+- **Calculate Total Bill**
 
-- View the final bill, including any applied discounts.
+- **View the final bill, including any applied discounts.**
 
-- Exit
+- **Exit**
 Quit the application when you are done.
 
-##Design Patterns Used
-1. Prototype Pattern
+
+## Design Patterns Used
+
+**1. Prototype Pattern**
+
 Ensures that new instances of Product are clones, avoiding direct references.
 Used when adding products to the cart to preserve product immutability.
 
-2. Strategy Pattern
+**2. Strategy Pattern**
+
 Allows dynamic selection of discount strategies at runtime.
 Includes three strategies for applying discounts:
-NoDiscount.
-PercentageDiscount.
-BuyOneGetOneFree.
+- NoDiscount.
+- PercentageDiscount.
+- BuyOneGetOneFree.
 
-3. Singleton Pattern (For Future Enhancements)
+**3. Singleton Pattern (For Future Enhancements)**
+
 Can be implemented for logging or managing system-wide configurations to ensure a single instance exists.
 
 ## Key Features
@@ -104,5 +119,6 @@ Real-Time Calculations
 **Console-Based Interface**
 - Intuitive and simple command-line interaction for user convenience.
 
-##Summary
+## Summary
+
 The E-Commerce Cart System demonstrates a functional shopping cart with advanced features like product management, discount strategies, and bill computation. By leveraging design patterns such as Prototype and Strategy, the system ensures scalability and modularity. Future enhancements can include a graphical user interface, logging features, and advanced cart management functionalities like inventory tracking or payment gateways.
