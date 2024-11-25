@@ -1,5 +1,3 @@
-//package ecommerce;
-
 public abstract class Product implements Cloneable {
     private String name;
     private double price;

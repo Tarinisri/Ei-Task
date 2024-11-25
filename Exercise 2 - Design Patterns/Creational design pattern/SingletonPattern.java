@@ -1,8 +1,8 @@
-//Logger: A singleton class that ensures only one instance exists across the application.
-//Private Constructor: Prevents instantiation from outside the class.
-//getInstance(): A static method to create and return the single Logger instance. It uses lazy initialization with thread-safe double-checked locking.
-//logMessage(): A method to log messages, demonstrating the functionality of the singleton.
-//Main Class: Accesses the singleton instance and uses it for logging. All accesses use the same Logger instance.
+// Logger: A singleton class that ensures only one instance exists across the application.
+// Private Constructor: Prevents instantiation from outside the class.
+// getInstance(): A static method to create and return the single Logger instance. It uses lazy initialization with thread-safe double-checked locking.
+// logMessage(): A method to log messages, demonstrating the functionality of the singleton.
+// Main Class: Accesses the singleton instance and uses it for logging. All accesses use the same Logger instance.
 
 
 class Logger {

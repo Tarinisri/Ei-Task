@@ -1,5 +1,3 @@
-//package ecommerce;
-
 import java.util.ArrayList;
 import java.util.List;
 

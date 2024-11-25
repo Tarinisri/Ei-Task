@@ -1,6 +1,6 @@
-//TextEditorState stores the editor’s state (content).
-//TextEditor can write content, save its state, or restore it.
-//The client can save the current state and restore it later.
+// TextEditorState stores the editor’s state (content).
+// TextEditor can write content, save its state, or restore it.
+// The client can save the current state and restore it later.
 
 
 // Memento

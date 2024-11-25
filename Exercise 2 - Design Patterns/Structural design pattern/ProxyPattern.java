@@ -1,7 +1,12 @@
-//ApiService is the real subject that fetches data.
-//ApiProxy wraps ApiService and adds caching to avoid redundant data fetching.
-//The client interacts with the proxy instead of directly accessing the service.
-interface ApiInterface{
+// ApiService is the real subject that fetches data.
+// ApiProxy wraps ApiService and adds caching to avoid redundant data fetching.
+// The client interacts with the proxy instead of directly accessing the service.
+
+import java.util.HashMap;
+import java.util.Map;
+
+// Interface
+interface ApiInterface {
     String fetchData(String endpoint);
 }
 
@@ -15,13 +20,16 @@ class ApiService implements ApiInterface {
 // Proxy
 class ApiProxy implements ApiInterface {
     private ApiService apiService = new ApiService();
-    private String cachedData;
+    private Map<String, String> cache = new HashMap<>();
 
     public String fetchData(String endpoint) {
-        if (cachedData == null) {
-            cachedData = apiService.fetchData(endpoint);
+        if (!cache.containsKey(endpoint)) {
+            System.out.println("Fetching from ApiService: " + endpoint);
+            cache.put(endpoint, apiService.fetchData(endpoint));
+        } else {
+            System.out.println("Returning cached data for: " + endpoint);
         }
-        return cachedData;
+        return cache.get(endpoint);
     }
 }
 
@@ -29,7 +37,17 @@ class ApiProxy implements ApiInterface {
 public class ProxyPattern {
     public static void main(String[] args) {
         ApiProxy proxy = new ApiProxy();
-        System.out.println(proxy.fetchData("/data"));
-        System.out.println(proxy.fetchData("/data")); // Cached
+
+        // First call - fetches from the real service
+        System.out.println(proxy.fetchData("/data1"));
+
+        // Second call - returns cached data
+        System.out.println(proxy.fetchData("/data1"));
+
+        // New endpoint - fetches from the real service
+        System.out.println(proxy.fetchData("/data2"));
+
+        // Cached endpoint
+        System.out.println(proxy.fetchData("/data2"));
     }
 }

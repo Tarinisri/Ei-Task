@@ -1,7 +1,7 @@
-//PaymentProcessor is the target interface expected by the client.
-//PayPal has a different interface (makePayment).
-//PayPalAdapter bridges the gap by wrapping a PayPal object and implementing the PaymentProcessor interface.
-//The client can now use PayPal as if it implements PaymentProcessor.
+// PaymentProcessor is the target interface expected by the client.
+// PayPal has a different interface (makePayment).
+// PayPalAdapter bridges the gap by wrapping a PayPal object and implementing the PaymentProcessor interface.
+// The client can now use PayPal as if it implements PaymentProcessor.
 
 
 // Existing interface

@@ -1,5 +1,3 @@
-//package ecommerce;
-
 public class PercentageDiscount implements DiscountStrategy {
     private double percentage;
 

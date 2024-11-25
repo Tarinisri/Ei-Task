@@ -51,38 +51,39 @@ Offers options to view products, manage the cart, apply discounts, and view the 
 
 - **Run the Application**
 
-Execute the `Main.java` file to start the console-based interface.
+	Execute the `Main.java` file to start the console-based interface.
 
 - **View Products**
 
-View a list of available products with their prices and availability.
+	View a list of available products with their prices and availability.
 
 - **Add Products to Cart**
 
-Enter the product name and quantity to add it to your cart.
+	Enter the product name and quantity to add it to your cart.
 
 - **View Cart**
 
-Display all items in your cart along with their total prices.
+	Display all items in your cart along with their total prices.
 
 - **Update or Remove Items**
 
-Modify quantities or remove items from the cart.
+	Modify quantities or remove items from the cart.
 
 - **Apply Discounts**
 
-Choose from available discount strategies:
+	Choose from available discount strategies:
 
-1. No Discount.
-2. Percentage-based Discount.
-3. Buy One Get One Free.
+	1. No Discount.
+	2. Percentage-based Discount.
+	3. Buy One Get One Free.
 
 - **Calculate Total Bill**
 
 - **View the final bill, including any applied discounts.**
 
 - **Exit**
-Quit the application when you are done.
+
+	Quit the application when you are done.
 
 
 ## Design Patterns Used

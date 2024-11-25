@@ -1,6 +1,6 @@
-//StockMarket is the subject that manages observers and notifies them of state changes.
-//StockClient is the observer that reacts to updates from StockMarket.
-//The client adds observers to the subject and sets the stock price, triggering notifications.
+// StockMarket is the subject that manages observers and notifies them of state changes.
+// StockClient is the observer that reacts to updates from StockMarket.
+// The client adds observers to the subject and sets the stock price, triggering notifications.
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-//Subsystems like VideoEncoder, AudioEncoder, and FileWriter handle specific parts of the process.
-//VideoConverterFacade simplifies the process for the client 
-//by providing a single method convert() that internally calls the subsystems.
+// Subsystems like VideoEncoder, AudioEncoder, and FileWriter handle specific parts of the process.
+// VideoConverterFacade simplifies the process for the client 
+// by providing a single method convert() that internally calls the subsystems.
 
 // Subsystems
 class VideoEncoder {

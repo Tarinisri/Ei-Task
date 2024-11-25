@@ -1,7 +1,7 @@
-//SupportHandler is an abstract class that defines the contract for handling requests.
-//Level1Support and Level2Support are concrete handlers.
-//The request is passed along the chain until a handler processes it.
-//The client only sends the request to the first handler.
+// SupportHandler is an abstract class that defines the contract for handling requests.
+// Level1Support and Level2Support are concrete handlers.
+// The request is passed along the chain until a handler processes it.
+// The client only sends the request to the first handler.
 
 
 // Handler
@@ -22,6 +22,8 @@ class Level1Support extends SupportHandler {
             System.out.println("Level 1 support handled the issue.");
         } else if (next != null) {
             next.handleRequest(issue);
+        } else {
+             System.out.println("No handler found for this issue.");   
         }
     }
 }

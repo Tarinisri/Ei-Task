@@ -1,7 +1,7 @@
-//The Shape interface defines a contract for shapes.
-//Circle and Rectangle are concrete implementations.
-//ShapeFactory decides which shape to create based on input.
-//The client only interacts with the factory.
+// The Shape interface defines a contract for shapes.
+// Circle and Rectangle are concrete implementations.
+// ShapeFactory decides which shape to create based on input.
+// The client only interacts with the factory.
 
 
 // Product
